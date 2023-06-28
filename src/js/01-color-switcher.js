@@ -14,6 +14,7 @@ startBtnEl.addEventListener('click', e => {
   e.preventDefault();
   stopBtnEl.disabled = false;
   startBtnEl.disabled = true;
+  document.body.style.backgroundColor = getRandomHexColor();
   timerChangeId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
